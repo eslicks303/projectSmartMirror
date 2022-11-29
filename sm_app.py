@@ -719,6 +719,10 @@ def get_quality(url):
     #     exit()
     return streams[len(streams) - 1]      # Return the first choice made  
 
+def pull_data():
+    if platform.system() != "Windows":
+        os.system("python pull.py")
+
 def main():
     
     gui = GUI()
@@ -765,6 +769,7 @@ def main():
         else:
             MSP_OUTPUT = open("MSP_OUTPUT.txt", 'r')
             action = MSP_OUTPUT.read()
+            pull_data()
             data = load_json('data.js')
             URL = data['URL']
             msg_flag = update_message(gui, welcome_timer, msg_flag)

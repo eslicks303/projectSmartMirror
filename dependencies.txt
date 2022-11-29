@@ -1,0 +1,28 @@
+python3 -m pip install PySimpleGUI
+
+sudo apt-get install weather-util
+
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+pip install spotipy --upgrade
+
+pip install pytube
+
+pip install python-vlc 
+
+pip install pillow
+
+pip install cloudscraper
+
+
+# Note to self: sudo cp /home/pi/fonts/font-to-be-moved /usr/share/fonts
+
+
+# - Roboto-Medium.ttf
+
+# - Roboto-ThinItalic.ttf
+
+# - Roboto-Regular.ttf
+
+# - Roboto-Light.ttf
+
